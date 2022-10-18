@@ -124,13 +124,11 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                     <tr>
                         <th>วัน</th>
                         <th>เวลา</th>
-                        <th>รหัสประเภททันตกรรม</th>
                     </tr>
                     <?php while ($row = $stmt->fetch()) : ?>
                         <tr>
                             <td><?= $row["วันที่ทันตแพทย์เข้าเวร"] ?></td>
                             <td><?= $row["เวลาที่ทันตแพทย์เข้าเวร"] ?></td>
-                            <td><?= $row["รหัสประเภททันตกรรม"] ?></td>
                         </tr>
                     <?php endwhile ?>
 

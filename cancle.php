@@ -8,9 +8,16 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <style>
+        h1{
+            text-align: center;
+            color: #7867bf;
+            font-size: 5em;
+            margin: 1em;
+        }
         body {
             background-color: #F9f2e7;
-            color: #47467b;
+            color: #F9f2e7;
+            margin: 2em;
         }
 
         input {
@@ -49,33 +56,8 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             background-color: #47467b;
             color: white;
         }
-
-        .logo {
-            background-color: #f7b1c3;
-            padding: 0.8em;
-
-        }
-
-        .logo img {
-            width: 10%;
-            margin-top: 1em;
-            display: inline-block;
-
-        }
-
-        .logo h1 {
-            display: inline-block;
-            margin-left: 2%;
-            font-size: 4em;
-            color: #47467b;
-        }
         
     </style>
-    <div class="logo">
-        <img src="logo.png">
-        <h1>Funtasy Dental Clinic</h1>
-    </div>
-
 </head>
 
 <body>
@@ -99,10 +81,10 @@ ORDER BY `การบันทึกข้อมูล`.`รหัสคนไ�
     $stmt->execute();
     $row = $stmt->fetch();
     ?>
+    <h1>CANCLE</h1>
     <div class="form1">
         <form action="confirm.php?รหัสใบนัด=<?= $row["รหัสใบนัด"] ?>">
             <fieldset>
-                <legend>Cancle</legend>
                 <label for="รหัสใบนัด">รหัสใบนัด : </label>
                 <input type="text" name="รหัสใบนัด" autofocus>
                 <button type="submit">NEXT</button>

@@ -57,27 +57,6 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             background-color: #47467b;
             color: #fff;
         }
-
-
-        .logo {
-            background-color: #f7b1c3;
-            padding: 0.8em;
-
-        }
-
-        .logo img {
-            width: 10%;
-            margin-top: 1em;
-            display: inline-block;
-
-        }
-
-        .logo h1 {
-            display: inline-block;
-            margin-left: 2%;
-            font-size: 4em;
-            color: #7867bf;
-        }
     </style>
     <script>
         function Delete(รหัสใบนัด) {
@@ -87,9 +66,6 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             alert("Cancle success!!");
         }
     </script>
-    <div class="logo"><img src="logo.png">
-        <h1>Funtasy Dental Clinic</h1>
-    </div>
 </head>
 
 <body>
